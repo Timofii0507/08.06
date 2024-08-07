@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Початок діапазону:" Margin="5"/>
+            <TextBox Name="StartTextBox" Margin="5"/>
 
+            <TextBlock Text="Кінець діапазону:" Margin="5"/>
+            <TextBox Name="EndTextBox" Margin="5"/>
+
+            <TextBlock Text="Кількість потоків:" Margin="5"/>
+            <TextBox Name="ThreadCountTextBox" Margin="5"/>
+
+            <Button Name="StartButton" Content="Запустити" Click="StartButton_Click" Margin="5"/>
+
+            <TextBox Name="OutputTextBox" Margin="5" Height="150" VerticalScrollBarVisibility="Auto" IsReadOnly="True" TextWrapping="Wrap"/>
+        </StackPanel>
     </Grid>
 </Window>
